@@ -1,0 +1,368 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #4caf4f26;
+    /* Green color, similar to the presentation */
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    background-color: #0a4a15;
+    width: 40%;
+    height: 100%;
+    margin: 0px;
+    column-gap: 10%;
+    align-items: center;
+    padding: 27px 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+ul a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+li:hover {
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+/* Media query para telas menores que 80px 
+@media (max-width: 580px) {
+    nav {
+    justify-content: center;
+}
+
+    ul {
+    width: 100%;
+    flex-direction: row;
+    padding: 10px 0;
+    column-gap: 19px;
+}
+    ul li {
+    margin-bottom: 10px;
+}
+}
+
+ver se vai funcionar 
+*/
+.container {
+    position: relative;
+    width: 100%;
+    /* ajuste a largura */
+    height: 500px;
+    /* ajuste a altura */
+}
+
+.quadrado-verde {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    /* ajuste a largura do quadrado */
+    height: 50%;
+    /* ajuste a altura do quadrado */
+    background-color: #98c734;
+    /* verde */
+    z-index: 1;
+}
+
+.container img {
+    position: absolute;
+    bottom: 16%;
+    /* ajuste a posição vertical da imagem */
+    right: 8%;
+    /* ajuste a posição horizontal da imagem */
+    width: 50%;
+    /* ajuste a largura da imagem */
+    height: 84%;
+    /* ajuste a altura da imagem */
+    object-fit: cover;
+    z-index: 2;
+}
+
+.titulo {
+    position: absolute;
+    top: 2%;
+    /* ajuste a posição vertical do título */
+    left: 2%;
+    /* ajuste a posição horizontal do título */
+    z-index: 3;
+    color: #fff;
+    /* cor do texto */
+    font-size: 90px;
+    /* tamanho da fonte */
+    background-color: #205311;
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+}
+
+#pp {
+    font-size: 20px;
+    color: #98c734;
+    letter-spacing: 14px;
+}
+
+footer {
+    background-color: #d8f4cf;
+    padding: 39px;
+}
+
+.box-sbr h1 {
+    text-align: center;
+    padding: 50px;
+    font-size: 49px;
+}
+
+.box-sbr h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.box-sbr {
+    background-color: #def0b7;
+}
+
+/*coisin*/
+
+/* From Uiverse.io by KSAplay */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    width: 280px;
+    border-radius: 25px;
+    background: lightgrey;
+    overflow: hidden;
+    transition: 100ms ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 3px 4px;
+}
+
+/* ---------- Info section ---------- */
+
+.info-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75%;
+    color: white;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    z-index: 1;
+    padding-left: 18px;
+}
+
+button {
+    display: block;
+    border: none;
+    background: transparent;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.weather div {
+    display: flex;
+    align-items: center;
+}
+
+.weather div:nth-child(1) {
+    width: 40%;
+    height: auto;
+}
+
+.temperature {
+    font-size: 34pt;
+    font-weight: 500;
+    line-height: 8%;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    padding-right: 18px;
+    z-index: 1;
+}
+
+.right-side>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hour {
+    font-size: 19pt;
+    line-height: 1em;
+}
+
+.date {
+    font-size: 15px;
+}
+
+/* ---------- Background ---------- */
+.background-design {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #115010;
+    overflow: hidden;
+}
+
+.circle {
+    background-color: #efc745;
+}
+
+.circle:nth-child(1) {
+    position: absolute;
+    top: -80%;
+    right: -50%;
+    width: 300px;
+    height: 300px;
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.circle:nth-child(2) {
+    position: absolute;
+    top: -70%;
+    right: -30%;
+    width: 210px;
+    height: 210px;
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.circle:nth-child(3) {
+    position: absolute;
+    top: -35%;
+    right: -8%;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+/* ---------- Days section ---------- */
+.days-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 25%;
+    background-color: #f0ffe6;
+    gap: 2px;
+    box-shadow: inset 0px 2px 5px #974859;
+}
+
+.days-section button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #074029;
+    box-shadow: inset 0px 2px 5px #c6f1c2;
+    cursor: pointer;
+    transition: 100ms ease;
+    gap: 5px;
+}
+
+.days-section button:hover {
+    scale: 0.9;
+    border-radius: 10px;
+}
+
+.days-section .day {
+    font-size: 10pt;
+    font-weight: 500;
+    color: white;
+    opacity: 0.7;
+}
+
+.icon-weather-day {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 100%;
+}
+
+.cr-scr{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cr-scr h1{
+    font-size: 50px;
+}
+
+
+.cardss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardd {
+  background-color: #c7dacb;
+  padding: 20px;
+  border: 1px solid #2b4d3c;
+  border-radius: 10px;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+.cardd h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.cardd p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hhh{
+    background-color: #c6f1c2;
+    margin: 3%;
+    padding: 40px;
+}
+
+.hhh p{
+    font-size: 25px;
+}
+
+.hhh h3{
+    font-size: 40px;
+}
